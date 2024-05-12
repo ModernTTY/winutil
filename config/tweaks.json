@@ -2267,6 +2267,19 @@
       "Invoke-WPFOOSU -action \"undo\""
     ]
   },
+  "WPFTweaksPowershell": {
+    "Content": "Apply the CTT Powershell profile",
+    "Description": "Apply the CTT Powershell profile available at https://github.com/ChrisTitusTech/powershell-profile",
+    "category": "Essential Tweaks",
+    "panel": "1",
+    "Order": "a009_",
+    "InvokeScript": [
+      "irm \"https://github.com/ChrisTitusTech/powershell-profile/raw/main/setup.ps1\" | iex"
+    ],
+    "UndoScript": [
+      "Remove-Item -Path $PROFILE -Force"
+    ]
+  },
   "WPFTweaksStorage": {
     "Content": "Disable Storage Sense",
     "Description": "Storage Sense deletes temp files automatically.",
