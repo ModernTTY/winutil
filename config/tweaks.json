@@ -2275,7 +2275,7 @@
     "Order": "a009_",
     "InvokeScript": [
       "
-      Remove-Item -Path $PROFILE -Force
+      Remove-Item -Path \"$PROFILE\" -Force
       irm \"https://github.com/ChrisTitusTech/powershell-profile/raw/main/setup.ps1\" | iex"
     ],
     "UndoScript": [
